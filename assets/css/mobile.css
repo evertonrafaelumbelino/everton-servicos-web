@@ -1,0 +1,309 @@
+/*
+    Paleta de Cores:
+        Fundo Body: #011e11
+        Fundo Header: #071b11
+        Fundo Footer: #071b11
+        Conteúdos destaque: #12ff46
+        Conteúdos menor destaque: #618a45
+        Cor texto: #ffffff
+        Cor aviso/erro: #7b1313
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "IBM Plex Mono";
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Open Sans";
+    margin: 12px 0px 20px 0px;
+    text-indent: 10px;
+    text-align: center;
+}
+
+strong {
+    color: #12ff46;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: #071b11;
+    width: 100%;
+}
+
+header > h1 {
+    font-size: 22px;
+    color: #12ff46;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #011e11;
+    color: #ffffff;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img#imgMenu {
+    width: 50px;
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+img#imgMenu:hover {
+    cursor: pointer;
+}
+
+div#menu {
+    display: none;
+}
+
+div#menu > a {
+    color: #071b11;
+    text-align: center;
+    text-decoration: none;
+    font-family: "IBM Plex Mono";
+    margin-top: 8px;
+    padding: 5px;
+    border: 1px solid #071b11;
+    width: 100%;
+    border-radius: 20px;
+}
+
+div#menu > a:hover {
+    color: #12ff46;
+    background-color: #071b11;
+}
+
+div.a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+div.a > a {
+    font-family: "IBM Plex Mono";
+    padding: 8px;
+    background-color: #12ff46;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 100px;
+    width: 85%;
+}
+
+div.img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div.img > img {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 20px;
+}
+
+section#beneficios > h3 {
+    font-size: 30px;
+}
+
+div#blocoBeneficio {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.blocosBeneficios {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #618a45;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    max-width: 500px;
+}
+
+span.iconeBeneficio > p {
+    margin-bottom: 10px;
+    font-size: 70px;
+}
+
+div#blocoServicos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.blocosServicos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #12ff46;
+    color: black;
+    max-width: 350px;
+    border-radius: 30px 30px;
+}
+
+div.blocosServicos img {
+    width: 100%;
+    border-radius: 0;
+}
+
+div.blocosServicos > h3, div.blocosServicos > p {
+    padding: 0px 10px;
+}
+
+section#depoimentos > p {
+    font-weight: bold;
+}
+
+div#textoDepoimento {
+    border: 2px solid #618a45;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px 0px;
+    max-width: 500px;
+}
+
+section#ondeMeEncontrar > h3 {
+    margin: 10px 0px;
+    color: #12ff46;
+}
+
+div#btnsRedesSociais {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 60px 0px;
+}
+
+div#btnsRedesSociais > a {
+    text-decoration: none;
+}
+
+div#btnsRedesSociais img {
+    width: 60px;
+    height: 60px;
+}
+
+div#btnsRedesSociais img:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+section#entreEmContato > p {
+    font-weight: bold;
+}
+
+div#formDeContato {
+    background-color: #071b11;
+    color: #618a45;
+    padding: 10px;
+    border: 2px solid #618a45;
+    border-radius: 20px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+form#formContato {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+form#formContato > input, form#formContato > textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+}
+
+input#inputEnviar {
+    background-color: #12ff46;
+}
+
+div#textoFormResultado {
+    font-size: 18px;
+}
+
+p#formAviso {
+    text-shadow: 1px 1px #7b1313;
+}
+
+section#portfolio > p {
+    margin: 30px 0px 35px 0px;
+}
+
+footer {
+    background-color: #071b11;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+}
