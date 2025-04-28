@@ -4,7 +4,6 @@
         Fundo Header: #071b11
         Fundo Footer: #071b11
         Conteúdos destaque: #12ff46
-        Conteúdos menor destaque: #618a45
         Cor texto: #ffffff
         Cor aviso/erro: #7b1313
 */
@@ -68,6 +67,20 @@ body {
     background-color: #011e11;
     color: #ffffff;
     width: 100%;
+}
+
+div#divLinkTopo {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #071b11;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 nav {
@@ -171,7 +184,7 @@ div.blocosBeneficios {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid #618a45;
+    border: 2px solid #12ff46;
     border-radius: 20px;
     margin-bottom: 30px;
     padding: 10px;
@@ -217,7 +230,7 @@ section#depoimentos > p {
 }
 
 div#textoDepoimento {
-    border: 2px solid #618a45;
+    border: 2px solid #12ff46;
     border-radius: 20px;
     padding: 10px;
     margin: 30px 0px;
@@ -257,9 +270,9 @@ section#entreEmContato > p {
 
 div#formDeContato {
     background-color: #071b11;
-    color: #618a45;
+    color: #12ff46;
     padding: 10px;
-    border: 2px solid #618a45;
+    border: 2px solid #12ff46;
     border-radius: 20px;
     width: 100%;
     margin: 25px 0px;
